@@ -1,0 +1,55 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html { font-size: 100%; }
+
+body {
+  line-height: 1.5;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+  background: #f2f2f2;
+}
+
+/* App */
+.content {
+  position: relative;
+  min-height: 100vh;
+
+  ul {
+    padding: 1.5rem 1.5rem (3.75rem + 1.5rem) 2.5rem;
+    margin: 0;
+  }
+}
+
+.bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0; right: 0;
+  background: #7F3C9E;
+  height: 3.75rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  input {
+    background: white;
+    border: 0;
+    height: 2.75rem;
+    padding: 0.5rem 1rem;
+    width: 80%;
+
+    &:focus { outline: 0; }
+  }
+}
