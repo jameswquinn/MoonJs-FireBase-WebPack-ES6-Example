@@ -13,7 +13,7 @@ firebase.initializeApp({
 
 const fbDb = firebase.database()
 
-  window.onload = () => {
+window.onload = () => {
 
   const app = new Moon({
     el: '#app',
