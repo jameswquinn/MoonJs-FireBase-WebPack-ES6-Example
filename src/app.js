@@ -24,7 +24,7 @@ window.onload = () => {
     methods: {
       addMessage: function() {
         let newMessage = this.get('newMessage'), // get the input value
-        that = this
+            that = this
 
         // add message to firebase
         if(newMessage.length !== 0 && newMessage.trim() !== '') {
@@ -36,7 +36,7 @@ window.onload = () => {
       },
       getMessages: function() {
         let that = this,
-        msgs = []
+            msgs = []
 
         // get the last 15 messages from firebase
         fbDb.ref('messages').limitToLast(15).once('value').then(snapshot => {
