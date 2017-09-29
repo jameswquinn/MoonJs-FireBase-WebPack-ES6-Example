@@ -50,10 +50,10 @@ window.onload = () => {
     },
     template: `<div class="content">
                  <ul>
-                   <li m-for="msg in messages">{{msg}}</li>
+                   <li m-for="message in messages">{{message}}</li>
                  </ul>
                  <div class="bottom">
-                   <input class="new-message" placeholder="What's your message" m-model="newMessage" m-on:keyup.enter="addMessage" />
+                   <input placeholder="What's your message" m-model="newMessage" m-on:keyup.enter="addMessage" />
                  </div>
                </div>`,
     hooks: {
