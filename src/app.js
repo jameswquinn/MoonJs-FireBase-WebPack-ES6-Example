@@ -3,12 +3,12 @@ import * as firebase from 'firebase'
 import './style.scss'
 
 firebase.initializeApp({
-	apiKey: 'AIzaSyDG6Wvi41EkXB88M2tZTR3WOWEj4PvTtOI',
-	authDomain: 'moon-firebase-chat.firebaseapp.com',
-	databaseURL: 'https://moon-firebase-chat.firebaseio.com',
-	projectId: 'moon-firebase-chat',
-	storageBucket: '',
-	messagingSenderId: '527682524924'
+apiKey: 'AIzaSyDG6Wvi41EkXB88M2tZTR3WOWEj4PvTtOI',
+authDomain: 'moon-firebase-chat.firebaseapp.com',
+databaseURL: 'https://moon-firebase-chat.firebaseio.com',
+projectId: 'moon-firebase-chat',
+storageBucket: '',
+messagingSenderId: '527682524924'
 })
 
 const fbDb = firebase.database()
@@ -18,9 +18,9 @@ window.onload = () => {
 	const app = new Moon({
 		el: '#app',
 		data: {
-	    newMessage: '',
-	    messages: []
-	  },
+			newMessage: '',
+			messages: []
+		},
 		methods: {
 			addMessage: function() {
 				let newMessage = this.get('newMessage'), // get the input value
@@ -33,7 +33,7 @@ window.onload = () => {
 						that.set('newMessage', '')
 					})
 				}
-	  	},
+			},
 			getMessages: function() {
 				let that = this,
 						msgs = []
