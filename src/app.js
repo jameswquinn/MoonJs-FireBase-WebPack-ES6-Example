@@ -23,8 +23,8 @@ window.onload = () => {
     },
     methods: {
       addMessage: function() {
-        let newMessage = this.get('newMessage'), // get the input value
-            that = this
+        let that = this,
+            newMessage = this.get('newMessage') // get the input value
 
         // add message to firebase
         if(newMessage.length !== 0 && newMessage.trim() !== '') {
